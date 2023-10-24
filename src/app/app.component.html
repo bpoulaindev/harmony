@@ -1,1 +1,8 @@
-<harmony-nx-welcome></harmony-nx-welcome> <router-outlet></router-outlet>
+<div class="relative h-[calc(100dvh)] w-[calc(100dvw)] flex justify-center bg-cream overflow-hidden">
+    <div class="bg-gradient-radial from-purple-300/30 to-purple-50/30 blur-2xl max-h-[calc(75dvh)] max-w-[calc(75dvh)] h-full w-full absolute -top-[calc(35dvh)] -right-[calc(25dvw)] z-0 rounded-full"></div>
+    <div class="bg-gradient-radial from-purple-300/30 to-purple-50/30 blur-2xl max-h-[calc(75dvh)] max-w-[calc(75dvh)] h-full w-full absolute -bottom-[calc(35dvh)] -left-[calc(25dvw)] z-20 rounded-full"></div>
+    <div class=" z-10 p-2 sm:p-4 bg-transparent flex justify-center w-full [&>*]:w-full">
+        <router-outlet class="hidden !w-[0px]"/>
+    </div>
+</div>
+

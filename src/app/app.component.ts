@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
+import { lucidePanelTopOpen } from '@ng-icons/lucide';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule],
   selector: 'harmony-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  viewProviders: [provideIcons({ lucidePanelTopOpen })],
 })
 export class AppComponent {
-  title = 'harmony';
+  title = 'Harmony';
 }

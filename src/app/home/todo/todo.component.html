@@ -1,0 +1,12 @@
+<li
+        class="w-full p-2 rounded-xl flex justify-between items-center mb-1 backdrop-blur bg-white/50 shadow-sm">
+    <h5 class="text-sm whitespace-normal mr-4">{{ todo.text }}</h5>
+    <div class="flex w-fit items-center">
+        <span hlmBadge [variant]="todo.done ? 'green' : 'red'" [className]="'mr-2'">
+            <lucide-icon [img]="todo.done ? Check : AlertTriangle" [size]="16" class="mr-0.25"></lucide-icon>
+            {{ todo.done ? 'Terminé' : 'A faire' }}
+        </span>
+        <harmony-todo-menu (deleteTodo)="onDeleteTodo()" (toggleTodo)="onToggleTodo()" [done]="todo.done"/>
+    </div>
+
+</li>
